@@ -1,5 +1,7 @@
 # ScaleETL
 
+![CI](https://github.com/APMahajan/scaleetl/actions/workflows/ci.yml/badge.svg)
+
 High-performance, dependency-free Java 21 CLI to **partition, transform, load and search** very large CSV files.
 
 ```
