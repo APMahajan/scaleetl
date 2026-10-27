@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Launcher: ./bin/scaleetl <command> ...   (build first with ./build.sh)
+DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+exec java ${SCALEETL_OPTS:--XX:+UseParallelGC -XX:MaxRAMPercentage=70} -jar "$DIR/build/scaleetl.jar" "$@"
